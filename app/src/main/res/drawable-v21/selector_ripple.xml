@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorPrimary">
+    <item>
+        <selector>
+            <item
+                android:drawable="@mipmap/red_bg"
+                android:state_pressed="true"></item>
+            <item
+                android:drawable="@mipmap/yellow_bg"
+                android:state_pressed="false"></item>
+        </selector>
+    </item>
+</ripple>

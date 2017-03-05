@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anumbrella="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dip">
+
+
+        <TextView
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="水波纹有界"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="水波纹无界"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/nomask_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="自定义水波纹无界"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/mask_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="自定义水波纹有界"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/shape_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="shape自定义水波纹"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/selector_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="selector自定义水波纹"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/layer_list"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="layer-list自定义水波纹"
+            android:textSize="18sp" />
+
+
+        <net.anumbrella.rippledemo.CustomView
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginTop="20dip"
+            android:background="@color/colorPrimary"
+            android:padding="10dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="自定义视图" />
+
+        </net.anumbrella.rippledemo.CustomView>
+
+
+        <net.anumbrella.ripplelibrary.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="20dip"
+            android:padding="10dip"
+            anumbrella:rv_color="@color/colorAccent"
+            anumbrella:rv_type="doubleRipple"
+            anumbrella:rv_zoom="true"
+            anumbrella:rv_zoomScale="1.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="自定义水波纹——放大效果|doubleRipple" />
+
+        </net.anumbrella.ripplelibrary.RippleView>
+
+
+        <net.anumbrella.ripplelibrary.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="20dip"
+            android:padding="10dip"
+            anumbrella:rv_color="@color/colorPrimary"
+            anumbrella:rv_type="simpleRipple">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="自定义水波纹|simpleRipple" />
+
+        </net.anumbrella.ripplelibrary.RippleView>
+
+
+        <net.anumbrella.ripplelibrary.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="20dip"
+            android:padding="10dip"
+            anumbrella:rv_color="@color/colorAccent"
+            anumbrella:rv_type="rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="自定义水波纹|rectangle" />
+
+        </net.anumbrella.ripplelibrary.RippleView>
+
+        <net.anumbrella.ripplelibrary.RippleView
+            android:id="@+id/listener"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="20dip"
+            android:padding="10dip"
+            anumbrella:rv_color="@color/colorAccent"
+            anumbrella:rv_type="simpleRipple">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="自定义水波纹——带监听|simpleRipple" />
+
+        </net.anumbrella.ripplelibrary.RippleView>
+
+
+    </LinearLayout>
+
+</ScrollView>

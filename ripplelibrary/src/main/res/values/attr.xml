@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--自定义水波纹样式属性-->
+    <declare-styleable name="RippleView">
+        <!--定义透明度-->
+        <attr name="rv_alpha" format="integer" />
+        <!--画面frame速率(帧速率)-->
+        <attr name="rv_framerate" format="integer" />
+        <!--水波纹持续时间-->
+        <attr name="rv_rippleDuration" format="integer" />
+        <!--视图放大持续时间-->
+        <attr name="rv_zoomDuration" format="integer" />
+        <!--扩散水波纹颜色-->
+        <attr name="rv_color" format="color" />
+        <!--是否从中心扩散-->
+        <attr name="rv_centered" format="boolean" />
+        <!--水波纹样式-->
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <!--水波纹扩散内边距-->
+        <attr name="rv_ripplePadding" format="dimension" />
+        <!--水波纹是否放大-->
+        <attr name="rv_zoom" format="boolean" />
+        <!--放大比例-->
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+
+
+</resources>
