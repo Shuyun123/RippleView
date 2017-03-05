@@ -3,4 +3,4 @@
 博文介绍 [链接](http://blog.csdn.net/Anumbrella/article/details/57074675)。
 
 ###演示
-![demo](https://github.com/Shuyun123/RippleView/master/demo.gif)
+![demo](https://raw.githubusercontent.com/Shuyun123/RippleView/master/demo.gif)
